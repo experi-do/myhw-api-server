@@ -15,7 +15,7 @@ EXPOSE 8081
 
 # 애플리케이션의 jar 파일을 컨테이너에 추가
 #ADD ${JAR_FILE}  app.jar
-ADD ./target/myhw-api-server-1.0-SNAPSHOT.jar app.jar
+ADD ./skala-stock-api/target/skala-stock-api-1.0-SNAPSHOT.jar app.jar
 
 # 애플리케이션 실행
 ENTRYPOINT ["java","-jar","app.jar"]
