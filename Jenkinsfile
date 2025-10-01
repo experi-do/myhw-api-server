@@ -32,8 +32,7 @@ pipeline {
     stage('Build with Maven') {
       steps {
         echo 'Build with Maven'
-        dir('skala-stock-api') {  // pom.xml이 존재하는 경로로 이동
-      	sh 'mvn clean package -DskipTests'
+        sh 'mvn clean package -DskipTests'
       }
     }
 
